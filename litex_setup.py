@@ -117,6 +117,7 @@ git_repos = {
     # RISC-V CPU(s).
     "pythondata-cpu-blackparrot":  GitRepo(url="https://github.com/litex-hub/"),
     "pythondata-cpu-cv32e40p":     GitRepo(url="https://github.com/litex-hub/", clone="recursive"),
+    "pythondata-cpu-cv32e40s":     GitRepo(url="https://github.com/litex-hub/", clone="recursive"),
     "pythondata-cpu-cv32e41p":     GitRepo(url="https://github.com/litex-hub/", clone="recursive"),
     "pythondata-cpu-cva5":         GitRepo(url="https://github.com/litex-hub/"),
     "pythondata-cpu-cva6":         GitRepo(url="https://github.com/litex-hub/", clone="recursive"),
