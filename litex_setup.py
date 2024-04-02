@@ -34,7 +34,7 @@ def print_banner():
     b.append("        / /__/ / __/ -_)>  <           ")
     b.append("       /____/_/\\__/\\__/_/|_|         ")
     b.append("     Build your hardware, easily!      ")
-    b.append("          LiteX Setup utility.         ")https://raw.githubusercontent.com/pcotret/litex/cv32e40s-patch-1/litex_setup.py
+    b.append("          LiteX Setup utility.         ")
     b.append("")
     print("\n".join(b))
 
@@ -70,13 +70,13 @@ class GitRepo:
 git_repos = {
     # HDL.
     # ----
-    "migen":    GitRepo(url="https://github.com/m-labs/",https://raw.githubusercontent.com/pcotret/litex/cv32e40s-patch-1/litex_setup.py clone="recursive", sha1=0xccaee68e14d3636e1d8fb2e0864dd89b1b1f7384),
+    "migen":    GitRepo(url="https://github.com/m-labs/", clone="recursive", sha1=0xccaee68e14d3636e1d8fb2e0864dd89b1b1f7384),
 
     # LiteX SoC builder.
     # ------------------
     "pythondata-software-picolibc":    GitRepo(url="https://github.com/litex-hub/", clone="recursive"),
     "pythondata-software-compiler_rt": GitRepo(url="https://github.com/litex-hub/"),
-    "litex":                           GitRepo(url="https://github.com/enjoy-digital/", tag=True),
+    "litex":                           GitRepo(url="https://github.com/pcotret/", tag=True),
 
     # LiteX Cores Ecosystem.
     # ----------------------
