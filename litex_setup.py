@@ -34,7 +34,7 @@ def print_banner():
     b.append("        / /__/ / __/ -_)>  <           ")
     b.append("       /____/_/\\__/\\__/_/|_|         ")
     b.append("     Build your hardware, easily!      ")
-    b.append("          LiteX Setup utility.         ")
+    b.append("          LiteX Setup utility.         ")https://raw.githubusercontent.com/pcotret/litex/cv32e40s-patch-1/litex_setup.py
     b.append("")
     print("\n".join(b))
 
@@ -70,7 +70,7 @@ class GitRepo:
 git_repos = {
     # HDL.
     # ----
-    "migen":    GitRepo(url="https://github.com/m-labs/", clone="recursive", sha1=0xccaee68e14d3636e1d8fb2e0864dd89b1b1f7384),
+    "migen":    GitRepo(url="https://github.com/m-labs/",https://raw.githubusercontent.com/pcotret/litex/cv32e40s-patch-1/litex_setup.py clone="recursive", sha1=0xccaee68e14d3636e1d8fb2e0864dd89b1b1f7384),
 
     # LiteX SoC builder.
     # ------------------
@@ -169,7 +169,7 @@ def litex_setup_location_check():
         current_path = os.path.join(current_path, "../")
 
 def litex_setup_auto_update():
-    litex_setup_url = "https://raw.githubusercontent.com/enjoy-digital/litex/master/litex_setup.py"
+    litex_setup_url = "https://raw.githubusercontent.com/pcotret/litex/cv32e40s-patch-1/litex_setup.py"
     current_sha1 = hashlib.sha1(open(os.path.realpath(__file__)).read().encode("utf-8")).hexdigest()
     print_status("LiteX Setup auto-update...")
     try:
